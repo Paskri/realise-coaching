@@ -1,0 +1,16 @@
+.block-container {
+  width: 20%;
+  height: fit-content;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+}
+.block-container input {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+.colored {
+  width: 100px;
+  height: 100px;
+}

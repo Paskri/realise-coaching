@@ -1,0 +1,29 @@
+.icon-title-text {
+  display: flex;
+  align-items: stretch; /* Les enfants s'étirent verticalement */
+  border: 1px solid var(--red);
+  border-radius: 15px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.itt-left {
+  flex: 0 0 37%; /* Largeur initiale de 37%, pas de croissance */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.itt-right {
+  flex: 1; /* Utilise tout l'espace restant */
+  padding: 10px;
+}
+
+.itt-left h3 {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0;
+}

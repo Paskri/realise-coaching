@@ -1,0 +1,45 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Allow: /contact
+
+# *
+User-agent: *
+Allow: /prestations/coaching-adulte
+
+# *
+User-agent: *
+Allow: /prestations/coaching-en-entreprise
+
+# *
+User-agent: *
+Allow: /prestations/coaching-en-milieu-scolaire
+
+# *
+User-agent: *
+Allow: /prestations/coaching-orientation-scolaire
+
+# *
+User-agent: *
+Allow: /questions
+
+# *
+User-agent: *
+Allow: /qui-suis-je
+
+# *
+User-agent: *
+Disallow: /mentions-legales
+
+# *
+User-agent: *
+Disallow: /404
+
+# Host
+Host: https://realise-coaching.fr
+
+# Sitemaps
+Sitemap: https://realise-coaching.fr/sitemap.xml

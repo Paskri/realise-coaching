@@ -1,0 +1,19 @@
+main {
+  background-color: white;
+}
+.about {
+  padding: 20px 20px 50px 20px;
+}
+.question-intro {
+  margin-bottom: 20px;
+}
+.margin-fix {
+  margin-top: 0;
+}
+@media screen and (min-width: 900px) {
+  .about {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}

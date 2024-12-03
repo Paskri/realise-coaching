@@ -1,0 +1,26 @@
+[
+  {
+    "img": "trees",
+    "title": "Épanouissez-vous dans votre activité",
+    "subtitle": "De l'énergie et du plaisir au travail à tout âge",
+    "alt": "Forêt de sapins vue du ciel"
+  },
+  {
+    "img": "aurore-boreale",
+    "title": "Trouver sa voie",
+    "subtitle": "Clarifiez vos envies, réalisez vos ambitions",
+    "alt": "Aurore Boréale"
+  },
+  {
+    "img": "grass",
+    "title": "Grandir avec confiance",
+    "subtitle": "Construis ton avenir dès aujourd'hui",
+    "alt": "De l'herbe en gros plan"
+  },
+  {
+    "img": "children",
+    "title": "Un avenir scolaire en main",
+    "subtitle": "Encourager la réussite scolaire à travers l'accompagnement",
+    "alt": "Des enfants qui jouent dans un pré"
+  }
+]

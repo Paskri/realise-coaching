@@ -1,0 +1,29 @@
+.legal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+  padding: 70px 10% 20px 10%;
+}
+.legal-container {
+  color: var(--primary);
+}
+.legal-container h1 {
+  width: fit-content;
+  padding: 10px 20px;
+  border-right: 1px solid var(--primary);
+  margin: 20px 20px 20px 0;
+}
+.legal-container a {
+  text-decoration: none;
+  color: #444444;
+}
+.legal-container a:hover {
+  text-decoration: underline;
+  color: blue;
+}

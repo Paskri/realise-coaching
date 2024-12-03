@@ -1,0 +1,177 @@
+.banner {
+  position: relative;
+  width: 100vw;
+  height: 250px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.loader-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 1;
+}
+.banner-card {
+  flex: none;
+  position: relative;
+  width: 100%;
+}
+.banner-card-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.banner-card-title {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.banner-card-slogan {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+.banner-card-img {
+  z-index: 1;
+  filter: brightness(0.7);
+}
+
+.btn-container {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+}
+.banner-prev,
+.banner-next {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.banner-prev:hover,
+.banner-next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.banner-prev {
+  left: 0;
+  border-radius: 0 15px 15px 0;
+}
+.banner-next {
+  right: 0;
+  border-radius: 15px 0 0 15px;
+}
+.ctrl-btn-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 20;
+}
+.ctrl-btns {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.small-btn {
+  width: 15px;
+  height: 15px;
+  background-color: lightgrey;
+  border: 1px solid black;
+  opacity: 0.5;
+  border-radius: 25px;
+  margin: 7px 7px 30px 7px;
+  transition: 0.5s ease-in-out;
+}
+.small-btn.active {
+  background-color: white;
+  opacity: 0.8;
+  border: 2px solid white;
+}
+
+@media screen and (min-width: 750px) {
+  .banner {
+    height: 300px;
+  }
+  .banner-prev,
+  .banner-next {
+    font-size: 2.25rem;
+  }
+
+  .btn-container {
+    align-items: center;
+  }
+  .banner-card-title {
+    font-size: 3rem;
+  }
+
+  .banner-card-slogan {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .banner {
+    height: 400px;
+  }
+  .banner-prev,
+  .banner-next {
+    font-size: 2.5rem;
+    border-radius: 15px;
+  }
+  .banner-prev {
+    left: 20px;
+  }
+  .banner-next {
+    right: 20px;
+  }
+
+  .banner-card-title {
+    font-size: 4rem;
+  }
+
+  .banner-card-slogan {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,30 @@
+.filtered {
+  filter: blur(20px) brightness(70%);
+}
+.modal-btn {
+  padding: 15px 30px;
+  margin: 30px auto 20px auto;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  max-width: 370px;
+  background: linear-gradient(
+    0deg,
+    var(--primary-gradient) 0%,
+    var(--primary) 100%
+  );
+  transition: all 0.3s ease-in-out;
+  color: white;
+  box-shadow: rgba(255, 255, 255, 0.5) 2px 2px 2px 0px inset,
+    rgba(0, 0, 0, 0.1) 7px 7px 20px 0px, rgba(0, 0, 0, 0.1) 4px 4px 5px 0px;
+  cursor: pointer;
+}
+.modal-btn:hover {
+  background: white;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+.calendly-popup {
+  max-height: unset;
+  height: 100%;
+}

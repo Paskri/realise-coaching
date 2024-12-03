@@ -1,0 +1,122 @@
+.collapsable-container.small,
+.collapsable-container.large {
+  width: 100%;
+  min-height: 50px;
+  margin-bottom: 15px;
+}
+.btn-collapse {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(
+    0deg,
+    var(--primary-gradient) 0%,
+    var(--primary) 100%
+  );
+  border-radius: 5px;
+  min-height: 50px;
+  height: fit-content;
+  color: white;
+  padding: 0 20px;
+  border: none;
+  z-index: 10;
+  margin: 0;
+}
+.btn-collapse h2 {
+  color: white;
+  margin: 0;
+}
+.btn-collapse.active {
+  border-radius: 5px 5px 0 0;
+}
+.btn-collapse img {
+  width: 24px;
+  height: 14px;
+}
+.collapsable {
+  padding: 5px 12px 0px 20px;
+  margin: -10px auto 20px auto;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  background-color: #f7f7f7;
+  border-radius: 5px 5px;
+  z-index: 0;
+  border: 1px solid var(--primary);
+}
+
+.collapsable-container.small h2,
+.collapsable-container.large h2 {
+  font-size: 0.8rem;
+  line-height: 1.15rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.collapsable.large p {
+  margin: 10px 0;
+  font-size: 0.75rem;
+  line-height: 1.1rem;
+}
+
+.collapsable.small p,
+.collapsable.small ul {
+  padding-top: 17px;
+  font-size: 0.75rem;
+  line-height: 1.1rem;
+  margin-bottom: 2px;
+}
+
+.show {
+  max-height: 500px;
+  transition: max-height 0.5s ease-in;
+}
+.collapsable ul {
+  font-size: 0.75rem;
+  line-height: 1.1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media screen and (min-width: 900px) {
+  .btn-collapse {
+    height: 50px;
+    border-radius: 10px;
+  }
+  .collapsable {
+    margin-bottom: 33px;
+  }
+  .collapsable.small {
+    margin-bottom: 14px;
+  }
+  .collapsable-container.small {
+    width: 47%;
+  }
+  .collapsable.large p,
+  .collapsable.large ul,
+  .collapsable.large li {
+    padding-top: 18px;
+    font-size: 1.125rem;
+    line-height: 1.6rem;
+    margin: 10px 0;
+    padding: 0;
+  }
+  .collapsable.small p,
+  .collapsable.small ul {
+    padding-top: 27px;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.6rem;
+    margin-bottom: 52px;
+  }
+  .collapsable-container.small h2 {
+    font-size: 1.125rem;
+    line-height: 1.6rem;
+  }
+  .collapsable-container.large h2 {
+    font-size: 1.125rem;
+    line-height: 1.55rem;
+  }
+}

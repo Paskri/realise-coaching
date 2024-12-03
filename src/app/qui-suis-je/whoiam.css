@@ -1,0 +1,82 @@
+.whoiam .text-section {
+  padding-top: 0;
+  background-color: var(--green-fog);
+}
+
+.whoiam .text-container {
+}
+.first-p {
+  margin-top: 0;
+}
+.whoiam-image-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0 20px 0;
+  background-color: var(--green-fog);
+}
+.whoiam-image-container h2 {
+  color: #444444;
+  margin: 10px 0 0 0;
+}
+.whoiam-image-container img {
+  box-shadow: 7px 5px 10px rgb(160, 160, 160);
+  border-radius: 10px;
+}
+
+.whoiam-subtitle {
+  color: #444444;
+  font-size: 1.1rem;
+}
+
+.whoiam .text-container {
+  padding: 80px 10%;
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.75rem;
+}
+
+.whoiam .separator {
+  margin-top: 30px;
+}
+.linkedin-link {
+  max-width: 375px;
+  padding: 12px 30px 25px 30px;
+  margin-top: 50px;
+  border: 2px solid #2768b2;
+  background-color: white;
+  border-radius: 15px;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkedin-link:hover {
+  background-color: var(--blue-fog);
+}
+
+.tag-container {
+  width: 100%;
+  max-width: 650px;
+  margin: 40px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.values-tag {
+  color: white;
+  font-size: 1.1rem;
+  padding: 5px 25px;
+  border-radius: 15px;
+  margin: 0 5px 15px 5px;
+}

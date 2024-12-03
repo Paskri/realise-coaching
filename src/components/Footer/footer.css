@@ -1,0 +1,144 @@
+footer {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  background-color: #222222;
+  color: white;
+}
+.footer-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 0px 0 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer-inner-container {
+  width: 30%;
+  min-width: 305px;
+  height: fit-content;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-container {
+  width: 125px;
+  height: 125px;
+  margin-bottom: 20px;
+}
+.footer-logo {
+  position: relative;
+  object-fit: cover;
+}
+.footer-line {
+  margin: 4px 0;
+  display: flex;
+  align-items: center;
+}
+.footer-address {
+  display: block;
+}
+.footer svg {
+  margin-right: 5px;
+  font-size: 2rem;
+}
+.column-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  min-height: auto;
+  margin-bottom: 20px;
+}
+.column-3 p {
+  font-size: 1.25rem;
+  color: var(--primary-gradient);
+}
+/*.column-3 .classic-btn-one {
+}*/
+.column-2 h2 {
+  color: var(--primary-gradient);
+  margin: 0;
+  text-align: left;
+}
+.column-2 p {
+  margin: 30px 0;
+}
+
+.column-2 a,
+.column-2 h2 {
+  text-align: left;
+}
+
+.footer-inner-container a {
+  color: white;
+  font-weight: normal;
+  display: block;
+  margin: 24px 0;
+  text-decoration: none;
+}
+
+.footer-inner-container a:hover {
+  text-decoration: underline;
+}
+
+.footer-inner-container.column-1 a {
+  margin: 0;
+  width: 210px;
+}
+
+.footer-inner-container.column-2 {
+  margin-top: 20px;
+}
+
+.footer-inner-container .classic-btn-one {
+  margin: 0;
+}
+.footer-bottom {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-bottom a {
+  padding: 10px 5px;
+  color: white;
+  text-decoration: none;
+}
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 625px) {
+  .column-3 {
+    align-items: center;
+  }
+  .footer-inner-container.column-1,
+  .footer-inner-container.column-2 {
+    display: block;
+  }
+  .footer-inner-container a {
+    margin: 31px 0;
+  }
+  .footer-inner-container.column-2 {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 926px) {
+  .column-3 {
+    min-height: 260px;
+  }
+  .column-2 a,
+  .column-2 h2 {
+    text-align: left;
+    padding-left: 60px;
+  }
+}

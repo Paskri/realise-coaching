@@ -1,0 +1,150 @@
+.testimonial-carrousel {
+  position: relative;
+  /*max-width: 1280px;*/
+  height: fit-content;
+  width: 100%;
+  margin: 0 auto 50px auto;
+  padding: 30px 0 30px 0;
+}
+.testimonial-container {
+  position: relative;
+  height: 260px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.testimonials-btn-container {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 300px;
+  height: 260px;
+  margin: 0 auto;
+  z-index: 20;
+}
+.testimonial-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background-color: white;
+  position: relative;
+  flex: none;
+  padding: 20px;
+  width: 100%;
+  min-height: 260px;
+  /*border: 1px solid lightgray;*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.tag {
+  display: block;
+  padding: 5px 10px;
+  border-radius: 7px;
+  color: white;
+}
+.author {
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: right;
+  font-weight: 600;
+  padding-right: 50px;
+  padding-top: 20px;
+}
+.testimonial-card h3 {
+  width: 100%;
+  font-size: 1.15rem;
+  margin: 13px 0 8px 0;
+  text-align: center;
+}
+.testimonial-card p {
+  text-align: center;
+}
+.carrousel-prev,
+.carrousel-next {
+  width: fit-content;
+  height: fit-content;
+  width: 50px;
+  height: 50px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(62, 147, 125, 1);
+  border-radius: 25px;
+  position: absolute;
+  top: 40%;
+  font-size: 1.5rem;
+  border: 1px solid rgba(62, 147, 125, 1);
+  line-height: 0;
+}
+.carousel-prev:hover,
+.carousel-next:hover {
+  text-decoration: none;
+  background-color: white;
+  color: rgba(62, 147, 125, 1);
+}
+.carrousel-prev {
+  left: -54px;
+}
+.carrousel-next {
+  right: -54px;
+}
+.testimonials-btn-container .small-btn.active {
+  border: 1px solid black;
+}
+.testimonials-btn-container .ctrl-btns {
+  margin-bottom: -30px;
+}
+.testimonials-btn-container .small-btn {
+  margin: 0px 7px 0px 7px;
+  background-color: white;
+}
+.testimonials-btn-container .small-btn.active {
+  background-color: grey;
+}
+@media screen and (min-width: 768px) {
+  .testimonial-container {
+    max-width: 600px;
+  }
+  .testimonials-btn-container {
+    max-width: 600px;
+  }
+  .carrousel-prev,
+  .carrousel-next {
+    display: flex;
+  }
+  .testimonial-card {
+    width: 580px;
+    margin: 0 10px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .testimonial-container {
+    max-width: 750px;
+  }
+  .testimonials-btn-container {
+    max-width: 750px;
+  }
+
+  .testimonial-inner {
+  }
+
+  .testimonial-card {
+    width: 730px;
+  }
+
+  .values {
+    text-align: center;
+  }
+}

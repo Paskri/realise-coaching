@@ -1,0 +1,28 @@
+[
+  { "label": "Accueil", "link": "/" },
+  { "label": "Qui suis-je ?", "link": "/qui-suis-je" },
+  {
+    "label": "Prestations",
+    "link": "/prestations",
+    "submenu": [
+      {
+        "label": "Coaching Orientation scolaire",
+        "link": "/prestations/coaching-orientation-scolaire"
+      },
+
+      { "label": "Coaching Adulte", "link": "/prestations/coaching-adulte" },
+
+      {
+        "label": "Coaching en Entreprise",
+        "link": "/prestations/coaching-en-entreprise"
+      },
+      {
+        "label": "Coaching en Milieu Scolaire",
+        "link": "/prestations/coaching-en-milieu-scolaire"
+      }
+    ]
+  },
+  { "label": "Questions", "link": "/questions" },
+  { "label": "Actualités", "link": "/actualites" },
+  { "label": "Contact", "link": "/contact" }
+]

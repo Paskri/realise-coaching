@@ -1,0 +1,83 @@
+.description-container {
+  padding: 20px;
+  width: 100%;
+}
+.element {
+  position: relative;
+  width: fit-content;
+  max-width: 1280px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.element2 {
+  color: white;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: fit-content;
+  height: 100%;
+  padding: 20px;
+  margin: 0;
+  padding: 15px 30px 15px 50px;
+}
+/* Mobile Styles */
+.element2 {
+  font-size: 1.5rem; /* 28px */
+}
+h2.element2 {
+  margin: 0;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .element2 {
+    font-size: 1.9rem; /* 32px */
+  }
+}
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .element2 {
+    font-size: 1.9rem; /* 32px */
+  }
+}
+
+.element::before,
+.element::after,
+.element2::before,
+.element2::after {
+  content: '';
+  position: absolute;
+  background-color: white;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
+}
+.element::before {
+  height: 2px;
+  width: 25%;
+  bottom: 0;
+  right: 0;
+}
+.element::after {
+  width: 2px;
+  height: 50%;
+  top: 0;
+  left: 0;
+}
+.element2::before {
+  width: 3px;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: 25;
+}
+.element2::after {
+  width: 100%;
+  height: 3px;
+  top: 0;
+  right: 0;
+  z-index: 20;
+}

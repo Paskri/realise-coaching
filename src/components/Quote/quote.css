@@ -1,0 +1,22 @@
+.quote {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 35px 0;
+}
+.quote-container {
+  padding: 25px 35px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+.stylized-quote {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .quote-container {
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+  }
+}

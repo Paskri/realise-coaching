@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Coaching Orientation scolaire",
+    "text": "<p>Accompagnement complet et personnalisé dans le projet d'orientation scolaire pour les jeunes de 14 à 25 ans.</p>\n<ul>\n  <li class=\"services-li orange-symbol\">Accompagnement sur mesure dans la rédaction de vos présentations et conseils pour l'utilisation de la plateforme PARCOURSUP.</li>\n  <li class=\"services-li orange-symbol\">Un concept unique d'orientation scolaire : « Find it & Test it » !</li>\n  <li class=\"services-li orange-symbol\">Pack complet d'aide à la recherche de stage ou job d'été, en individuel ou en atelier (4 participants max).</li>\n  <li class=\"services-li orange-symbol\">Un partenariat « <a href=\"https://www.avenirfactory.fr\">Avenir Factory</a> », acteur remarquable de l'orientation scolaire.</li>\n</ul>",
+    "color": "orange",
+    "link": "/prestations/coaching-orientation-scolaire",
+    "partner": {
+      "img": "avenir-factory.webp",
+      "link": "https://www.avenirfactory.fr"
+    }
+  },
+  {
+    "title": "Coaching Adultes",
+    "text": "<p>Découvrez ce qui vous tient vraiment à cœur et donnez-vous les moyens de décrocher le job de vos rêves !</p>\n<ul>\n  <li class=\"services-li purple-symbol\">Coaching en épanouissement professionnel</li>\n  <li class=\"services-li purple-symbol\">Conseils dans votre recherche d'emploi</li>\n  <li class=\"services-li purple-symbol\">Coaching de retour à l'emploi</li>\n  <li class=\"services-li purple-symbol\">Préparer un entretien d'embauche ?</li>\n  <li class=\"services-li purple-symbol\">Coaching « 3<sup>ème</sup> Vie ».</li>\n</ul>",
+    "color": "purple",
+    "link": "/prestations/coaching-adulte"
+  },
+  {
+    "title": "Coaching en Entreprise",
+    "text": "<p>Accompagner avec bienveillance et efficacité vos collaborateurs dans leur retour en entreprise ou leur départ.</p>\n<ul>\n  <li class=\"services-li red-symbol\">Accompagnement d’un retour de congé maternité ou d'un congé parental</li>\n  <li class=\"services-li red-symbol\">Accompagnement d'un retour de congé longue maladie.</li>\n  <li class=\"services-li red-symbol\">Accompagnement d'un retour de congé sabbatique</li>\n  <li class=\"services-li red-symbol\">Coaching pour une expatriation (coaching familial ou individuel).</li>\n  <li class=\"services-li red-symbol\">Coaching « 3<sup>ème</sup> Vie ».</li>\n</ul>",
+    "color": "red",
+    "link": "/prestations/coaching-en-entreprise"
+  },
+  {
+    "title": "Coaching en mileu scolaire",
+    "text": "<p>Intervention en classe entière : Recherche de stage, CV, lettre de motivation et méthodologie de recherche.</p>\n<ul>\n  <li class=\"services-li blue-symbol\">Animation d'atelier CV et LM en petit groupe.</li>\n  <li class=\"services-li blue-symbol\">Atelier de rédaction de présentation dans Parcoursup.</li>\n  <li class=\"services-li blue-symbol\">Conseils pour des entretiens de concours.</li>\n  <li class=\"services-li blue-symbol\">Mise en place d'une banque de stage au sein d'un établissement.</li>\n</ul>",
+    "color": "blue",
+    "link": "/prestations/coaching-en-milieu-scolaire"
+  }
+]

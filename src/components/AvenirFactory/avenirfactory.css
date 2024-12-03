@@ -1,0 +1,16 @@
+.partner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.partner a {
+  display: block;
+  padding: 5px;
+  border-radius: 5px;
+  overflow: visible;
+}
+.partner a:hover {
+  display: block;
+  background-color: rgb(235, 235, 235);
+}
