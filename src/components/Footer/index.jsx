@@ -91,10 +91,9 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <span>© Realise Coaching 2024, </span>
-        <Link href="/mentions-legales">Mentions Légales</Link>,
+        <span className="copyright">© Realise Coaching 2024, </span>
+        <Link href="/mentions-legales">Mentions Légales</Link>, Développé par:
         <span>
-          Développé par:{' '}
           <Link href="https://krieg.fr" target="__blank">
             Pascal Krieg, développeur au K par K
           </Link>
