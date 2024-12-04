@@ -5,9 +5,9 @@ import NavBar from '@/components/NavBar'
 import Offset from '@/components/Offset'
 import PictureAndText from '@/components/PictureAndText'
 import NegFlag from '@/components/NegFlag'
-import './entreprise.css'
-import Image from 'next/image'
 import AosImg from '@/components/AosImg'
+
+import './entreprise.css'
 
 export const metadata = {
   title: "Coaching en Entreprise | Realise Coaching",
@@ -30,7 +30,9 @@ export const metadata = {
     type: "article",
     images: [
       {
-        url: "https://www.realise-coaching.fr/images/coaching-entreprise.jpg",
+        url: "https://www.realise-coaching.fr/images/og/bridge-og.webp",
+        width: 1200,
+        height: 630,
         alt: "Coaching en entreprise - Realise Coaching",
       },
     ],
@@ -62,7 +64,6 @@ export default function Entreprise() {
               Avec des séances en visio, ou dans mes locaux, ou enfin, dans l’entreprise même.</p><p>
               Accompagnez avec bienveillance et efficacité vos collaborateurs dans leur retour en entreprise ou leur départ.</p>"
         />
-
         <section className="text-section">
           <div className="text-container">
             <NegFlag txt="Accompagner un retour de congé maternité ou un congé
@@ -80,13 +81,13 @@ export default function Entreprise() {
                 />
               </div>
             </div>
+
             <NegFlag txt="Accompagner un retour de congé longue maladie" color="red" />
             <p>Une écoute active et bienveillante le rassurera et lui permettra d’envisager l’avenir sereinement dans votre entreprise.</p>
             <p>Ses priorités ou ses capacités physiques ont peut-être changées, et doivent être reconsidérées et prises en compte dans l’adaptation de son poste et de son rythme de travail.</p>
 
             <NegFlag txt="Accompagner un retour de congés sabbatique" color="red" />
             <div className="text-img-container reversed">
-
               <div className="img-side">
                 <AosImg
                   src="/images/conge-sabbatique.webp"
@@ -99,6 +100,7 @@ export default function Entreprise() {
                 <p>Une écoute active et bienveillante le rassurera et lui permettra d’envisager l’avenir sereinement dans votre entreprise.</p>
               </div>
             </div>
+
             <NegFlag txt="Coaching expatriation ou retour d’expatriation" color="red" />
             <div className="text-img-container">
               <div className="text-side">
@@ -113,6 +115,7 @@ export default function Entreprise() {
                 />
               </div>
             </div>
+
             <NegFlag txt="Coaching « 3<sup>ème</sup> Vie »" color="red" />
             <p>Enfin, une entreprise a une dernière occasion d’être reconnaissante envers un salarié qui part à la retraite en lui offrant un coaching pour l’aider à préparer cette nouvelle tranche de vie qui est un véritable changement.</p>
           </div>

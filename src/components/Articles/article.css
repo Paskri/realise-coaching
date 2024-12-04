@@ -2,6 +2,7 @@
   text-align: left;
   border-bottom: 1px solid var(--primary);
   margin-bottom: 5px;
+  font-size: 1.25rem;
 }
 .article-large {
   width: 100%;
@@ -14,4 +15,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.date {
+  font-style: italic;
+  color: #555555;
+}
+.article .img-side {
+  height: fit-content;
+}
+
+/* Mobile Styles */
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .article h2 {
+    font-size: 1.5rem; /* 24px */
+  }
+}
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .article h2 {
+    font-size: 1.625rem; /* 28px */
+  }
 }

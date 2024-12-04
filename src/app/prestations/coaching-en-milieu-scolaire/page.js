@@ -5,7 +5,6 @@ import NavBar from '@/components/NavBar'
 import NegFlag from '@/components/NegFlag'
 import Offset from '@/components/Offset'
 import PictureAndText from '@/components/PictureAndText'
-import Image from 'next/image'
 import AosImg from '@/components/AosImg'
 
 export const metadata = {
@@ -29,7 +28,9 @@ export const metadata = {
     type: "article",
     images: [
       {
-        url: "https://www.realise-coaching.fr/images/coaching-milieu-scolaire.jpg",
+        url: "https://www.realise-coaching.fr/images/og/young-people-og.webp",
+        width: 1200,
+        height: 630,
         alt: "Coaching en milieu scolaire - Realise Coaching",
       },
     ],
@@ -63,7 +64,6 @@ export default function CoachingEnMileuScolaire() {
         <section className="text-section">
           <div className="text-container">
             <NegFlag txt="Techniques de recherche de stage" color={color} />
-
             <p>
               Intervention CV / Lettre de motivation / technique de recherche de stage
             </p>
@@ -143,6 +143,7 @@ export default function CoachingEnMileuScolaire() {
                 <p>Pour les écoles qui le demandent, redaction de leur projet de formation motivé ou lettre de motivation</p>
               </div>
             </div>
+
             <NegFlag txt="Création d'une Banque de Stages" color={color} />
             <p>Mise en place d’une banque de stage au sein d’un établissement</p>
             <p>En partant du constat que 95% des élèves  de 3<sup>ème</sup> et de Seconde trouvent leur stage avec l’aide de leurs parents, ces derniers sont sensibilisés à la difficulté de trouver un lieu de stage.</p>
@@ -196,7 +197,6 @@ export default function CoachingEnMileuScolaire() {
             }),
           }}
         />
-
       </main >
     </>
   )

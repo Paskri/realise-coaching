@@ -4,7 +4,7 @@ Allow: /
 
 # *
 User-agent: *
-Allow: /contact
+Allow: /qui-suis-je
 
 # *
 User-agent: *
@@ -28,7 +28,11 @@ Allow: /questions
 
 # *
 User-agent: *
-Allow: /qui-suis-je
+Allow: /actualites
+
+# *
+User-agent: *
+Allow: /contact
 
 # *
 User-agent: *

@@ -10,9 +10,35 @@ import Image from 'next/image'
 import AosImg from '@/components/AosImg'
 
 export const metadata = {
-  title: 'Realise Coaching - Coaching 25 ans et plus',
-  description: 'Découvrez mon offre de coaching pour plus de 25 ans',
-}
+  title: "Coaching Adulte | Realise Coaching",
+  description: "Découvrez le coaching pour adultes : redonnez du sens à votre carrière, optimisez vos candidatures et préparez vos entretiens avec une experte en recrutement.",
+  keywords: [
+    "coaching adulte",
+    "coaching professionnel",
+    "épanouissement professionnel",
+    "préparation entretien d'embauche",
+    "optimisation CV",
+    "coaching carrière",
+    "gestion du stress entretien",
+    "nouveau défi professionnel",
+    "coaching emploi",
+  ],
+  openGraph: {
+    title: "Coaching Adulte | Realise Coaching",
+    description: "Donnez un nouveau souffle à votre vie professionnelle avec un coaching personnalisé : bilan de carrière, optimisation des candidatures, et préparation aux entretiens.",
+    url: "https://www.realise-coaching.fr/prestation/coaching-adulte",
+    type: "article",
+    images: [
+      {
+        url: "https://www.realise-coaching.fr/images/og/barque-og.webp",
+        width: 1200,
+        height: 630,
+        alt: "Coaching adulte - Realise Coaching",
+      },
+    ],
+  },
+};
+
 
 export default function CoachingAdulte() {
   const color = 'purple'
@@ -70,7 +96,6 @@ export default function CoachingAdulte() {
               </div>
             </div>
 
-
             <NegFlag txt="Dynamisez votre candidature" color="purple" />
             <div className="text-img-container reversed">
               <div className="img-side">
@@ -99,8 +124,8 @@ export default function CoachingAdulte() {
                   Je vous propose un accompagnement sur mesure, en quelques séances
                 </p>
               </div>
-
             </div>
+
             <NegFlag
               txt="Besoin de préparer un entretien d’embauche ?"
               color="purple"
@@ -148,8 +173,6 @@ export default function CoachingAdulte() {
               </div>
             </div>
 
-
-
             <NegFlag txt="Coaching retour à l’emploi" color="purple" />
             <p>
               Reprendre un rythme de vie professionnelle aprés plusieurs mois
@@ -193,7 +216,6 @@ export default function CoachingAdulte() {
                   collectives et individuelles.
                 </p>
               </div>
-
             </div>
           </div>
         </section>

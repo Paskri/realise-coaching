@@ -5,7 +5,7 @@ import Offset from '@/components/Offset'
 import NavBar from '@/components/NavBar'
 import ContactInfos from '@/components/ContactInfos'
 import PopupWrap from '@/components/PopupWrap'
-
+import Link from 'next/link'
 import Image from 'next/image'
 
 import './contact.css'
@@ -18,7 +18,6 @@ import {
   faTrainTram,
   faBusSimple,
 } from '@fortawesome/free-solid-svg-icons'
-import Link from 'next/link'
 
 export const metadata = {
   title: 'Contact | Realise Coaching',
@@ -45,7 +44,9 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.realise-coaching.fr/images/contact.jpg',
+        url: 'https://www.realise-coaching.fr/images/og/room-og.webp',
+        width: 1200,
+        height: 630,
         alt: 'Bureaux de Realise Coaching',
       },
     ],
@@ -68,7 +69,6 @@ export default function Contact() {
         </header>
         <main className="contact-wrapper">
           <Flag txt="Discutons de votre projet" level={1} />
-
           <div className="contact-container">
             <ContactForm />
             <div className="right-container two">
@@ -153,7 +153,6 @@ export default function Contact() {
                 icon={faPhone}
                 link="tel:0682312168"
               />
-
             </div>
             <div className="map-container">
               <iframe

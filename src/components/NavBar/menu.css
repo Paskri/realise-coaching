@@ -64,7 +64,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*border-bottom: 2px solid lightgrey;*/
   background-color: white;
   height: 82px;
   width: 100%;
@@ -331,7 +330,6 @@ nav a:hover {
   stroke-dashoffset: -64px;
 }
 .ham8.active .middle {
-  /*stroke-dashoffset: -20px;*/
   transform: rotate(90deg);
 }
 .ham8.active .bottom {

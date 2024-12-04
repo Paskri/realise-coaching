@@ -24,10 +24,10 @@ export default function Slider() {
   const intervalRef = useRef(null)
   const currentIndexRef = useRef(null)
 
-  const lastTimestampRef = useRef(null) // Référence pour le dernier timestamp
-  const animationFrameRef = useRef(null) // Référence pour l'animationFrame
+  const lastTimestampRef = useRef(null) 
+  const animationFrameRef = useRef(null)
 
-  // mise à jour du ref de l'index courant
+  // Updating to current index
   useEffect(() => {
     currentIndexRef.current = currentIndex
     const sliderCards = document.querySelectorAll('.slider-card')
@@ -42,7 +42,7 @@ export default function Slider() {
     }
   }, [currentIndex])
 
-  // Initialisation des données du slider
+  // Slider data init
   useEffect(() => {
     if (data) {
       const clonedStart = data.slice(-1)
@@ -52,7 +52,7 @@ export default function Slider() {
     }
   }, [data])
 
-  //effet transition loader spinner -> slider
+  //Loader spinner to slider transition
   useEffect(() => {
     const container = sliderRef.current
     if (!isLoading && container) {
@@ -71,14 +71,12 @@ export default function Slider() {
     }, 3000)
   }, [isLoading])
 
-  // mise à jour de l'affichage en fonction de l'index
+  // Updating display from index
   useEffect(() => {
     const container = containerRef.current
     let newIndex = 0
     if (container) {
       if (nextIndex < 1) {
-        //saut vers le haut
-
         container.style.transition = `unset`
         container.style.left = `-${(sliderDatas.length - 1) * stepWidth}px`
 
@@ -88,19 +86,14 @@ export default function Slider() {
         }, 200)
         newIndex = sliderDatas.length - 2
       } else if (nextIndex > sliderDatas.length - 2) {
-        //saut vers le bas
-
         container.style.transition = `unset`
         container.style.left = `-${0}px`
-
         setTimeout(() => {
           container.style.transition = `2s ease-in-out`
           container.style.left = `-${stepWidth}px`
         }, 200)
         newIndex = 1
       } else {
-        //déplacement normal vers le nouvel index
-
         container.style.transition = `2s ease-in-out`
         container.style.left = `-${nextIndex * stepWidth}px`
         newIndex = nextIndex
@@ -112,13 +105,12 @@ export default function Slider() {
     }
   }, [nextIndex])
 
-  // Initialisation du conteneur à l'index 1
+  // Init container to index 1
   useEffect(() => {
     const container = containerRef.current
     const wiw = window.innerWidth
     if (container) {
       setStepWidth(wiw)
-      // S'assurer que le conteneur a la bonne largeur et est bien centré
       container.style.left = `-${window.innerWidth}px`
       setCurrentIndex(1)
     }
@@ -131,7 +123,7 @@ export default function Slider() {
     }
   }, [sliderDatas])
 
-  // Changement de l'index du slider
+  // Changing slider Index
   const handleCarouselClick = (e = null, value) => {
     if (e) {
       e.preventDefault()
@@ -145,7 +137,6 @@ export default function Slider() {
       if (!lastTimestampRef.current) lastTimestampRef.current = timestamp
       const elapsed = timestamp - lastTimestampRef.current
       if (elapsed >= 7000) {
-        // 5000ms = 5 secondes
         setNextIndex((prev) => currentIndexRef.current + 1)
         lastTimestampRef.current = timestamp
       }
@@ -330,6 +321,3 @@ export default function Slider() {
     </>
   )
 }
-
-//currentIndex: {currentIndex} -- nextIndex: {nextIndex} -- stepWidth:{' '}
-//{stepWidth} -- run: {run ? 'Started' : 'stopped'}

@@ -27,51 +27,14 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.realise-coaching.fr/images/faq-coaching.jpg",
+        url: "https://www.realise-coaching.fr/images/og/children-og.webp",
+        width: 1200,
+        height: 630,
         alt: "FAQ sur le coaching avec REALISE Coaching"
       },
     ],
   },
 };
-export const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Comment se déroule un coaching ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Lors d'un coaching, c’est vous qui faites émerger des solutions. Le coach vous guide dans votre réflexion à travers des exercices, des questionnements, et des prises de conscience. Le coach n’énonce pas de solutions."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Combien de séances sont nécessaires pour un coaching ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Un accompagnement en coaching est généralement estimé entre 8 et 10 séances. Les séances sont idéalement espacées de 8 à 10 jours. Le coaching dure donc entre 2 et 3 mois, avec la possibilité de le réaliser en présentiel ou en visio."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Comment prendre contact pour un coaching ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Vous pouvez me contacter par mail, téléphone, ou via le formulaire en ligne. Il est également possible de prendre rendez-vous directement via mon agenda partagé sur Calendly. Un premier contact téléphonique ou en visio vous permettra de discuter de vos attentes et de vos problématiques."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Qu'est-ce que le coaching d'orientation scolaire ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Le coaching d'orientation scolaire est destiné aux jeunes qui ont besoin d'être accompagnés dans leur parcours scolaire, notamment pour choisir leur orientation et réussir leur passage vers le supérieur, comme dans le cadre de la plateforme Parcoursup."
-      }
-    }
-  ]
-};
-
 
 export default function Questions() {
   return (
@@ -87,7 +50,6 @@ export default function Questions() {
         />
       </header>
       <main>
-
         <section className="about">
           <p className='margin-fix'>Veuillez trouver ci-dessous une selection des questions les plus fréquemment posées autour de la question des coachings que je propose.</p>
           <p className='question-intro'>Si vous ne trouvez pas la réponse que vous cherchez, n’hésitez pas à prendre contact. Je serais ravie de pouvoir vous apporter toutes les réponses dont vous avez besoin.</p>
@@ -163,6 +125,50 @@ export default function Questions() {
         </section>
 
       </main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Comment se déroule un coaching ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Lors d'un coaching, c’est vous qui faites émerger des solutions. Le coach vous guide dans votre réflexion à travers des exercices, des questionnements, et des prises de conscience. Le coach n’énonce pas de solutions.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Combien de séances sont nécessaires pour un coaching ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Un accompagnement en coaching est généralement estimé entre 8 et 10 séances. Les séances sont idéalement espacées de 8 à 10 jours. Le coaching dure donc entre 2 et 3 mois, avec la possibilité de le réaliser en présentiel ou en visio.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Comment prendre contact pour un coaching ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Vous pouvez me contacter par mail, téléphone, ou via le formulaire en ligne. Il est également possible de prendre rendez-vous directement via mon agenda partagé sur Calendly. Un premier contact téléphonique ou en visio vous permettra de discuter de vos attentes et de vos problématiques.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Qu'est-ce que le coaching d'orientation scolaire ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Le coaching d'orientation scolaire est destiné aux jeunes qui ont besoin d'être accompagnés dans leur parcours scolaire, notamment pour choisir leur orientation et réussir leur passage vers le supérieur, comme dans le cadre de la plateforme Parcoursup.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
+
     </>
   )
 }

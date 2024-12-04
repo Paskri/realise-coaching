@@ -119,7 +119,6 @@
   align-items: center;
   z-index: 20;
 }
-
 .small-btn {
   width: 15px;
   height: 15px;
@@ -146,7 +145,6 @@
   .slider-next {
     font-size: 2.25rem;
   }
-
   .btn-container {
     align-items: center;
   }
@@ -154,7 +152,6 @@
     padding: 0 70px;
     font-size: 3rem;
   }
-
   .slider-card-slogan {
     font-size: 1.5rem;
   }
@@ -177,11 +174,9 @@
   .slider-next {
     right: 20px;
   }
-
   .slider-card-title {
     font-size: 4rem;
   }
-
   .slider-card-slogan {
     font-size: 2rem;
   }

@@ -1,11 +1,12 @@
 import React from 'react'
-import './services.css'
 import Link from 'next/link'
 import ButtonOne from '../buttons/ButtonOne'
 import content from '../../assets/services.json'
 import adjustColor from '@/functions/adjustColor'
 import Image from 'next/image'
 import AvenirFactory from '../AvenirFactory'
+
+import './services.css'
 
 export default function Services() {
   return (
@@ -49,31 +50,3 @@ export default function Services() {
     </>
   )
 }
-
-/**<div
-            className="services-card"
-            style={{
-              border: `1px solid blue`,
-            }}
-          >
-            <div className={`services-card-title blue`}>
-              <h3>Mise en page</h3>
-            </div>
-            <div className="services-card-text-container">
-              <p>
-                Découvrez ce qui vous tient vraiment à cœur et donnez vous les
-                moyens de décrocher le job de vos rêves !
-              </p>
-              <p>Coaching en épanouissement professionnel</p>
-              <p>Conseils dans votre recherche d’emploi</p>
-              <p>Besoin de préparer un entretien d’embauche?</p>
-              <p></p>
-            </div>
-            <ButtonOne
-              txt="En savoir +"
-              color="blue"
-              colorOne="blue"
-              link="/"
-              type="button"
-            />
-          </div> */

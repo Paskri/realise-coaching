@@ -30,7 +30,7 @@ export const metadata = {
     url: 'https://www.realise-coaching.fr/',
     images: [
       {
-        url: 'https://www.realise-coaching.fr/images/Lucie_logo_sapin_FINAL.png',
+        url: 'https://www.realise-coaching.fr/images/og/realise-logo-og.webp',
         width: 1200,
         height: 630,
         alt: 'Logo de Realise Coaching et slogan "Un avenir scolaire en main"',

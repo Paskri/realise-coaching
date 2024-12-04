@@ -2,9 +2,10 @@ import Banner from '@/components/Banner/Banner'
 import NavBar from '@/components/NavBar'
 import Offset from '@/components/Offset'
 import Image from 'next/image'
-import './mentionslegales.css'
 import NegFlag from '@/components/NegFlag'
 import Flag from '@/components/Flag'
+
+import './mentionslegales.css'
 
 export default function MentionsLegales() {
   return (
@@ -17,7 +18,6 @@ export default function MentionsLegales() {
           title="Mentions légales"
           subtitle=""
           alt="Karsten Winegeart - Un pont vu du ciel"
-
         />
       </header>
       <main>

@@ -2,8 +2,9 @@
 import { useState } from 'react'
 import dropdownClose from './images/dropdown-close.svg'
 import dropdownOpen from './images/dropdown-open.svg'
-import './collapse.css'
 import Image from 'next/image'
+
+import './collapse.css'
 
 export default function Collapse(props) {
   const { size, title, content } = props

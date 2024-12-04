@@ -1,11 +1,10 @@
 'use client'
-import './buttonthree.css'
-//import { ColorContext } from '@/contexts/ColorContext'
 import React, { useState } from 'react'
+
+import './buttonthree.css'
 
 export default function ButtonThree(props) {
   const { txt } = props
-  //const { fourthColor, fourthGradientColor } = useContext(ColorContext)
   const [isHovered, setIsHovered] = useState(false)
   return (
     <button
@@ -17,13 +16,3 @@ export default function ButtonThree(props) {
     </button>
   )
 }
-
-/**style={{
-        background: isHovered
-          ? `white`
-          : `linear-gradient(
-    0deg,
-    ${fourthGradientColor} 0%,
-    ${fourthColor} 100%
-  )`,
-      }} */

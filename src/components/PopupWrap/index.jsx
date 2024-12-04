@@ -46,8 +46,8 @@ export default function PopupWrap() {
             primaryColor: '00a2ff',
             textColor: '4d5055',
           }}
-          utm={{}} // Remplacez par vos paramètres
-          prefill={{}} // Remplacez par vos paramètres
+          utm={{}}
+          prefill={{}}
           onModalClose={() => setIsModalOpen(false)}
           open={isModalOpen}
           rootElement={document.getElementById('modal-root')}
@@ -56,4 +56,3 @@ export default function PopupWrap() {
     </>
   )
 }
-//custom-btn btn-7

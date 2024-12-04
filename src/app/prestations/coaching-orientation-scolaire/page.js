@@ -1,5 +1,4 @@
 import React from 'react'
-import AvenirFactory from '@/components/AvenirFactory'
 import Banner from '@/components/Banner/Banner'
 import Flag from '@/components/Flag'
 import NavBar from '@/components/NavBar'
@@ -7,7 +6,6 @@ import NegFlag from '@/components/NegFlag'
 import Offset from '@/components/Offset'
 import PictureAndText from '@/components/PictureAndText'
 import Quote from '@/components/Quote'
-import Image from 'next/image'
 import Link from 'next/link'
 import AosImg from '@/components/AosImg'
 
@@ -34,14 +32,14 @@ export const metadata = {
     type: 'article',
     images: [
       {
-        url: 'https://www.realise-coaching.fr/images/coaching-orientation.jpg',
+        url: 'https://www.realise-coaching.fr/images/og/children-og.webp',
+        width: 1200,
+        height: 630,
         alt: "Coaching d'orientation scolaire - Realise Coaching",
       },
     ],
   },
 }
-
-// Ne pas oublier de modifier l'image dans les métadonnées
 
 export default function OrientationScolaire() {
   return (
@@ -114,19 +112,10 @@ export default function OrientationScolaire() {
                   alt="Projet d'expatriation familiale"
                   width={600}
                   height={400} />
-                {
-                  //  <Image
-                  //  src="/images/working-students.webp"
-                  //  alt="Projet d'expatriation familiale"
-                  //  width={600}
-                  //  height={400}
-                  ///>
-                }
               </div>
             </div>
 
             <NegFlag txt="Coaching d'orientation scolaire" color="orange" />
-
             <div className="text-img-container reversed">
               <div className="img-side-big-height">
                 <AosImg
@@ -134,14 +123,6 @@ export default function OrientationScolaire() {
                   alt="Projet d'expatriation familiale"
                   width={450}
                   height={675} />
-                {
-                  //<Image
-                  //  src="/images/mongolfieres2.webp"
-                  //  alt="Projet d'expatriation familiale"
-                  //  width={450}
-                  //  height={675}
-                  ///>
-                }
               </div>
               <div className="text-side">
                 <Quote
@@ -165,7 +146,6 @@ export default function OrientationScolaire() {
                   toujours en présence d’au moins 1 parent et du jeune.
                 </p>
               </div>
-
             </div>
 
             <NegFlag txt="Un partenariat Avenir Factory" color="orange" />
@@ -196,20 +176,9 @@ export default function OrientationScolaire() {
                     width={276}
                     height={100}
                   />
-                  {
-                    //  <Image
-                    //  style={{ height: 'auto' }}
-                    //  src="/images/af-logo.webp"
-                    //  alt="Projet d'expatriation familiale"
-                    //  width={276}
-                    //  height={100}
-                    ///>
-                  }
                 </Link>
               </div>
             </div>
-
-
 
             <NegFlag
               txt="PARCOUSUP, Accompagnement sur Mesure"
@@ -223,14 +192,6 @@ export default function OrientationScolaire() {
                   width={450}
                   height={300}
                 />
-                {
-                  //<Image
-                  //  src="/images/happy-students.webp"
-                  //  alt="Projet d'expatriation familiale"
-                  //  width={450}
-                  //  height={300}
-                  ///>
-                }
               </div>
               <div className="text-side">
                 <p>Conseils pour l’utilisation de la plateforme PARCOURSUP.</p>

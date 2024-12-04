@@ -1,6 +1,8 @@
 'use client'
 import React from 'react'
+
 import './negflag.css'
+
 /**
  * NegFlag component / custom title
  *

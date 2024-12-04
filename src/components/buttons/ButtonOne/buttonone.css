@@ -28,8 +28,6 @@ button {
     var(--primary-gradient) 0%,
     var(--primary) 100%
   );
-  /*rgba(255, 151, 0, 1) 0%,
-    rgba(251, 75, 2, 1) 100% */
   line-height: 42px;
   padding: 0;
   border: none;

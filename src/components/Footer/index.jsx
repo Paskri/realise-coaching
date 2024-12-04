@@ -1,5 +1,4 @@
 import React from 'react'
-import './footer.css'
 import ButtonClassicOne from '../buttons/ButtonClassicOne'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -9,7 +8,8 @@ import {
   faEnvelope,
 } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
-import ButtonOne from '../buttons/ButtonOne'
+
+import './footer.css'
 
 export default function Footer() {
   return (
@@ -73,7 +73,6 @@ export default function Footer() {
             </a>
           </div>
         </div>
-
         <div className="footer-inner-container column-2">
           <h2>Mes offres</h2>
           <Link href="/prestations/coaching-en-milieu-scolaire">

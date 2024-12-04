@@ -1,11 +1,11 @@
 'use client'
 import adjustColor from '@/functions/adjustColor'
+
 import './buttonone.css'
-//import { ColorContext } from '@/contexts/ColorContext'
+
 import React, { useContext, useState } from 'react'
 /**
  * ButtonOne component
- *
  * @param {Object} props - The props object
  * @param {string} props.txt - The primary text
  * @param {string} props.colorOne - The base color
@@ -18,7 +18,6 @@ export default function ButtonOne(props) {
   if (colorOne) {
     colorTwo = adjustColor(colorOne)
   }
-  //const { primaryColor, primaryGradientColor } = useContext(ColorContext)
   const [isHovered, setIsHovered] = useState(false)
 
   return (
@@ -33,13 +32,3 @@ export default function ButtonOne(props) {
     </button>
   )
 }
-
-/**style={{
-        background: isHovered
-          ? `white`
-          : `linear-gradient(
-      0deg,
-      ${primaryGradientColor} 0%,
-      ${primaryColor} 100%
-    )`,
-      }} */

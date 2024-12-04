@@ -4,13 +4,14 @@ module.exports = {
   robotsTxtOptions: {
     policies: [
       { userAgent: '*', allow: '/' },
-      { userAgent: '*', allow: '/contact' },
+      { userAgent: '*', allow: '/qui-suis-je' },
       { userAgent: '*', allow: '/prestations/coaching-adulte' },
       { userAgent: '*', allow: '/prestations/coaching-en-entreprise' },
       { userAgent: '*', allow: '/prestations/coaching-en-milieu-scolaire' },
       { userAgent: '*', allow: '/prestations/coaching-orientation-scolaire' },
       { userAgent: '*', allow: '/questions' },
-      { userAgent: '*', allow: '/qui-suis-je' },
+      { userAgent: '*', allow: '/actualites' },
+      { userAgent: '*', allow: '/contact' },
       { userAgent: '*', disallow: '/mentions-legales' },
       { userAgent: '*', disallow: '/404' },
     ],

@@ -98,7 +98,6 @@
 *::after {
   box-sizing: border-box;
 }
-
 html,
 body {
   font-size: 16px; /* 1rem = 16px */
@@ -107,21 +106,18 @@ body {
   padding: 0;
   font-family: didot, sans-serif; /*'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
 }
-
-/* body agit comme un conteneur flexible */
 body {
   color: black;
   width: 100%;
   z-index: 1;
 }
 
-/* main prend l'espace restant, poussant le footer vers le bas */
+/* Main grow if body flex */
 main {
   flex-grow: 1;
   position: relative;
   z-index: 40;
 }
-
 .background-img {
   height: 100%;
   width: 100%;
@@ -139,7 +135,6 @@ main {
   position: relative;
   z-index: 1;
 }
-
 h1,
 h2,
 h3 {
@@ -159,7 +154,7 @@ h3 {
   margin-top: 20px;
 }
 
-/* **** Mise en Page de texte **** */
+/* **** Textual content layout **** */
 .text-section {
   width: 100%;
   padding: 0 20px 40px 20px;
@@ -300,7 +295,7 @@ h3 {
   }
 }
 
-/* ***** 404 ***** */
+/* ***** 404 - not found ***** */
 .not-found {
   display: flex;
   flex-direction: column;
@@ -322,6 +317,8 @@ h3 {
   border-right: 1px solid var(--primary);
   margin: 20px 20px 20px 0;
 }
+
+/* *** Fonts management *** */
 /* Mobile Styles */
 h1 {
   font-size: 1.8125rem; /* 32px */

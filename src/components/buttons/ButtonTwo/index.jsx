@@ -1,6 +1,8 @@
 import React from 'react'
-import './buttontwo.css'
 import adjustColor from '@/functions/adjustColor'
+
+import './buttontwo.css'
+
 export default function ButtonTwo(props) {
   const { txt, txt2, colorOne } = props
   const colorTwo = adjustColor(colorOne)

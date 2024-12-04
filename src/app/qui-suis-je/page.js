@@ -1,13 +1,12 @@
 import Banner from '@/components/Banner/Banner'
 import NavBar from '@/components/NavBar'
-import Menu from '@/components/NavBar'
 import Offset from '@/components/Offset'
-import Image from 'next/image'
 import React from 'react'
-import './whoiam.css'
 import Link from 'next/link'
 import NegFlag from '@/components/NegFlag'
 import AosImg from '@/components/AosImg'
+
+import './whoiam.css'
 
 export const metadata = {
   title: 'Qui suis-je ? | Realise Coaching',
@@ -37,7 +36,9 @@ export const metadata = {
     },
     images: [
       {
-        url: 'https://www.realise-coaching.fr/images/lucie-portrait.jpg',
+        url: 'https://www.realise-coaching.fr/images/og/natal-landscape.webp',
+        width: 1200,
+        height: 630,
         alt: 'Portrait de Lucie Calvayrac',
       },
     ],
@@ -67,7 +68,6 @@ export default function QuiSuisJe() {
           />
           <h2>Lucie Calvayrac</h2>
           <span className="whoiam-subtitle">
-            {' '}
             Coach professionnel et d’orientation scolaire
           </span>
           <div className="separator"></div>
@@ -138,6 +138,7 @@ export default function QuiSuisJe() {
                 Comment faire la différence dans un process de recrutement ? ou
                 encore Comment valoriser ses loisirs dans son CV ?{' '}
               </p>
+
               <NegFlag txt="Mes valeurs à votre service" color="green" />
               <div className="tag-container">
                 <span className="values-tag green">Bienveillance</span>
@@ -160,11 +161,11 @@ export default function QuiSuisJe() {
                 width={154}
                 height={38}
                 alt="Logo LinkedIn"
-
               />
             </Link>
           </div>
         </section>
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

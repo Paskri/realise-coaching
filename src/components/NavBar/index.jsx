@@ -1,13 +1,12 @@
 'use client'
 import React, { useCallback, useState } from 'react'
-
-import './menu.css'
 import navLinks from '../../assets/navlinks.json'
 import Link from 'next/link'
-
 import ReactModal from 'react-modal'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
+
+import './menu.css'
 
 ReactModal.setAppElement('body')
 const customStyle = {
@@ -45,26 +44,13 @@ const customStyle = {
 
 export default function NavBar(props) {
   const { color = 'green' } = props
-  let activeLink = useState(false)
   const [isOpen, setIsOpen] = useState(false)
   const [dropdownOpen, setDropdownOpen] = useState(false)
-
-  const toggleDropdown = (index) => {
-    setDropdownOpen(dropdownOpen === index ? null : index)
-  }
-
-  const handleNavLinkClick = () => {}
 
   const toggleModal = useCallback(
     (e) => {
       e.stopPropagation()
       setIsOpen(!isOpen)
-      /* added when I want to have a blurred mobile menu */
-      //if (isOpen) {
-      //  document.body.style.overflow = 'auto'
-      //} else {
-      //  document.body.style.overflow = 'hidden'
-      //}
     },
     [isOpen]
   )
@@ -72,7 +58,6 @@ export default function NavBar(props) {
   const isActive = (path) => {
     return router.pathname === path
   }
-  const logoColor = color ? `-${color}` : ''
 
   return (
     <>

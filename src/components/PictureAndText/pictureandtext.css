@@ -28,6 +28,7 @@
   border-radius: 15px;
   object-fit: cover;
 }
+
 /* Tablet Styles */
 @media (min-width: 768px) {
   .txt-container p {
@@ -35,6 +36,7 @@
     text-align: center;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .picture-and-text-container {
     display: flex;
@@ -50,5 +52,3 @@
     text-align: center;
   }
 }
-
-/* Mobile Styles */

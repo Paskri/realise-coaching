@@ -1,14 +1,30 @@
 import Banner from '@/components/Banner/Banner'
 import NavBar from '@/components/NavBar'
 import Offset from '@/components/Offset'
-import './actualites.css'
 import Articles from '@/components/Articles'
 
+import './actualites.css'
 
-//https://api.realise-coaching.fr/wp-json/wp/v2/posts
+export const metadata = {
+  title: 'Actualités | Nom du Site',
+  description: 'Découvrez les dernières actualités et articles sur [votre thématique ou entreprise].',
+  openGraph: {
+    title: 'Actualités | Nom du Site',
+    description: 'Découvrez les dernières actualités et articles sur [votre thématique ou entreprise].',
+    url: 'https://realise-coaching.fr/actualites',
+    type: 'website',
+    images: [
+      {
+        url: 'https://realise-coaching.fr/images/og/bridge-og.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Bannière des actualités',
+      },
+    ],
+  },
+};
+
 export default function Actualites() {
-
-
   return (
     <>
       <header>
@@ -16,10 +32,9 @@ export default function Actualites() {
         <Offset />
         <Banner
           src="bridge"
-          title="Realise Coaching"
-          subtitle="Actualités"
+          title="Actualités"
+          subtitle="News, annonces, évènements ..."
           alt="Karsten Winegeart - Un pont vu du ciel"
-
         />
       </header>
       <main className='actus'>
@@ -28,7 +43,6 @@ export default function Actualites() {
             <Articles />
           </div>
         </section>
-
       </main>
     </>
   )

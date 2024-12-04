@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
+
 import './avenirfactory.css'
+
 export default function AvenirFactory(props) {
   const { big } = props
   return (

@@ -1,5 +1,6 @@
 import React from 'react'
 import './buttonFour.css'
+
 export default function ButtonFour(props) {
   const { txt, txt2 } = props
   return (

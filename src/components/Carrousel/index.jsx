@@ -31,8 +31,8 @@ export default function Carrousel() {
   const carIndexRef = useRef(null)
   const stepWidthRef = useRef(null)
 
-  const lastTimestampRef = useRef(null) // Référence pour le dernier timestamp
-  const animationFrameRef = useRef(null) // Référence pour l'animationFrame
+  const lastTimestampRef = useRef(null)
+  const animationFrameRef = useRef(null)
 
   // updating step Width ref
   useEffect(() => {
@@ -45,7 +45,6 @@ export default function Carrousel() {
     const testimonialCards = document.querySelectorAll('.testimonial-card')
     for (const card of testimonialCards) {
       if (card.getAttribute('aria-hidden') === 'false') {
-        //card.setAttribute('aria-hidden', 'true')
         card.setAttribute('inert')
         const jsCardBtn = card.querySelector('.js--card-btn')
         jsCardBtn.setAttribute('aria-hidden', 'true')
@@ -54,7 +53,6 @@ export default function Carrousel() {
       }
     }
     if (testimonialCards[carIndex]) {
-      //testimonialCards[carIndex].setAttribute('aria-hidden', 'false')
       testimonialCards[carIndex].removeAttribute('inert')
       testimonialCards[carIndex]
         .querySelector('.js--card-btn')
@@ -74,7 +72,7 @@ export default function Carrousel() {
     }
   }, [data])
 
-  // Initialisation du conteneur à l'index 1
+  // container initialisation to index 1
   useEffect(() => {
     const container = tcRef.current
     if (container) {
@@ -95,7 +93,7 @@ export default function Carrousel() {
     }
   }, [carrouselDatas])
 
-  /* *** Resizing handling *** */
+  /* *** Resizing *** */
   useEffect(() => {
     const handleResize = () => {
       const container = tcRef.current
@@ -125,8 +123,6 @@ export default function Carrousel() {
     let newIndex = 0
     if (container) {
       if (nextIndex < 1) {
-        //saut vers le haut
-
         container.style.transition = `unset`
         container.style.left = `-${(carrouselDatas.length - 1) * stepWidth}px`
 
@@ -136,8 +132,6 @@ export default function Carrousel() {
         }, 200)
         newIndex = carrouselDatas.length - 2
       } else if (nextIndex > carrouselDatas.length - 2) {
-        //saut vers le bas
-
         container.style.transition = `unset`
         container.style.left = `-${0}px`
 
@@ -147,8 +141,6 @@ export default function Carrousel() {
         }, 200)
         newIndex = 1
       } else {
-        //déplacement normal vers le nouvel index
-
         container.style.transition = `1s ease-in-out`
         container.style.left = `-${nextIndex * stepWidth}px`
         newIndex = nextIndex
@@ -167,7 +159,6 @@ export default function Carrousel() {
       if (!lastTimestampRef.current) lastTimestampRef.current = timestamp
       const elapsed = timestamp - lastTimestampRef.current
       if (elapsed >= 7000) {
-        // 5000ms = 5 secondes
         setNextIndex((prev) => carIndexRef.current + 1)
         lastTimestampRef.current = timestamp
       }
@@ -196,14 +187,13 @@ export default function Carrousel() {
     const handleMouseLeave = () => {
       startRAF()
     }
-    // Démarrer l'intervalle au montage du composant
+
     startRAF()
     if (tcarRef.current) {
       tcarRef.current.addEventListener('mouseenter', handleMouseEnter)
       tcarRef.current.addEventListener('mouseleave', handleMouseLeave)
     }
 
-    // Nettoyage de l'intervalle au démontage du composant
     return () => {
       stopRAF()
       if (tcarRef.current) {

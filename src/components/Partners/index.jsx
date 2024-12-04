@@ -1,6 +1,7 @@
 import React from 'react'
-import './partners.css'
 import Image from 'next/image'
+
+import './partners.css'
 
 export default function Partners() {
   return (

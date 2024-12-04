@@ -1,9 +1,0 @@
-.calendly-overlay {
-  background-color: white !important;
-}
-.calendly-popup-close {
-  background: url('../../../public/svg/close-cross.svg') no-repeat !important;
-  width: 22px !important;
-  height: 22px !important;
-  background-size: contain !important;
-}
