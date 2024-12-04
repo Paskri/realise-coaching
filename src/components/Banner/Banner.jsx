@@ -52,7 +52,7 @@ export default function Banner(props) {
       <div className="banner-container">
         <div className="banner-card">
           <div className="banner-card-container">
-            <h1 className="banner-card-title">{title}</h1>
+            {title ? <h1 className="banner-card-title">{title}</h1> : ''}
             <span className="banner-card-slogan">{subtitle}</span>
           </div>
           <Image

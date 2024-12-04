@@ -102,48 +102,50 @@ export default function NavBar(props) {
               d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
             />
           </svg>
-          <nav className="">
-            {navLinks.map((link, index) => (
-              <li
-                key={link.link}
-                className={`navbar-li ${isActive(link.link) ? 'active' : ''}`}
-                onMouseEnter={() => setDropdownOpen(index)}
-                onMouseLeave={() => setDropdownOpen(null)}
-                onClick={() =>
-                  setDropdownOpen((prev) => (prev === index ? null : index))
-                }
-              >
-                {link.link && !link.submenu ? (
-                  <Link href={link.link} className={`link-${color}`}>
-                    {link.label}
-                  </Link>
-                ) : (
-                  <>
-                    <button className={`navbar-btn link-${color}`}>
+          <nav>
+            <ul className="nav-ul">
+              {navLinks.map((link, index) => (
+                <li
+                  key={link.link}
+                  className={`navbar-li ${isActive(link.link) ? 'active' : ''}`}
+                  onMouseEnter={() => setDropdownOpen(index)}
+                  onMouseLeave={() => setDropdownOpen(null)}
+                  onClick={() =>
+                    setDropdownOpen((prev) => (prev === index ? null : index))
+                  }
+                >
+                  {link.link && !link.submenu ? (
+                    <Link href={link.link} className={`link-${color}`}>
                       {link.label}
-                    </button>
-                    {dropdownOpen === index && (
-                      <ul
-                        className={`${
-                          dropdownOpen === index ? 'open' : ''
-                        } dropdown`}
-                      >
-                        {link.submenu.map((subLink, subIndex) => (
-                          <li key={subIndex} className="">
-                            <Link
-                              href={subLink.link}
-                              className={`link-${color}`}
-                            >
-                              {subLink.label}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </>
-                )}
-              </li>
-            ))}
+                    </Link>
+                  ) : (
+                    <>
+                      <button className={`navbar-btn link-${color}`}>
+                        {link.label}
+                      </button>
+                      {dropdownOpen === index && (
+                        <ul
+                          className={`${
+                            dropdownOpen === index ? 'open' : ''
+                          } dropdown`}
+                        >
+                          {link.submenu.map((subLink, subIndex) => (
+                            <li key={subIndex} className="">
+                              <Link
+                                href={subLink.link}
+                                className={`link-${color}`}
+                              >
+                                {subLink.label}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </>
+                  )}
+                </li>
+              ))}
+            </ul>
           </nav>
           <ReactModal
             className="nav-modal"

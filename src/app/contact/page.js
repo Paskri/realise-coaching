@@ -97,7 +97,7 @@ export default function Contact() {
             <div className="contact-imgs-container-two">
               <div className="contact-imgs-wrapper">
                 <div className="contact-img">
-                  <Link href="https://lapoulequimue.alsace" target="__blank">
+                  <Link href="https://lapoulequimue.alsace" target="_blank">
                     <Image
                       src="/images/poule-qui-mue-thumb.webp"
                       alt="La poule qui mue, intérieur"
@@ -129,12 +129,13 @@ export default function Contact() {
           <div className="contact-container two">
             <div className="right-container infos">
               <ContactInfos
-                txt="<span className='address'>Espace coworking La Poule Qui Mue</span><span className='address'>24 Rue des Érables, 67210 OBERNAI</span><span className='address'>Accessibilité PMR</span>"
+                txt="<span class='address'>Espace coworking La Poule Qui Mue</span><span class='address'>24 Rue des Érables, 67210 OBERNAI</span><span class='address'>Accessibilité PMR</span>"
                 icon={faLocation}
                 link="https://lapoulequimue.alsace"
               />
+              {/* nesting a in a not allowed. Suppressed link : <a href='https://psbeillkirch.wixsite.com/psbe' target='_blank'></a> */}
               <ContactInfos
-                txt="<span className='address'><a href='https://psbeillkirch.wixsite.com/psbe' target='__blank'>Pôle de santé et de Bien-être</a></span><span className='address'>158 B, Route de Lyon - 67118 ILLKIRCH</span><span className='address'>2<sup>ème</sup> étage avec ascenseur.</span>"
+                txt="<span class='address'>Pôle de santé et de Bien-être</span><span class='address'>158 B, Route de Lyon - 67118 ILLKIRCH</span><span class='address'>2<sup>ème</sup> étage avec ascenseur.</span>"
                 icon={faLocation}
                 link="https://www.google.com/maps?q=158B+route+de+Lyon,+67400+Illkirch-Graffenstaden"
               />
@@ -144,7 +145,7 @@ export default function Contact() {
                 link="https://www.google.fr/maps/place/170+Rte+de+Lyon,+67400+Illkirch-Graffenstaden/@48.523329,7.7044163,17z/data=!3m1!4b1!4m6!3m5!1s0x4796ca1291bad391:0xc153fb8c6fe40d33!8m2!3d48.523329!4d7.7069966!16s%2Fg%2F11c2hc5zy5?entry=ttu&g_ep=EgoyMDI0MTExMC4wIKXMDSoASAFQAw%3D%3D"
               />
               <ContactInfos
-                txt="<span class='address'>Tram A, terminus Graffenstaden.</span><span class='address'>Bus ligne 62 et 67, arret Graffenstaden"
+                txt="<span class='address'>Tram A, terminus Graffenstaden.</span><span class='address'>Bus ligne 62 et 67, arret Graffenstaden</span>"
                 icon={faBusSimple}
                 link="https://www.cts-strasbourg.eu/fr/se-deplacer/recherche-itineraires/"
               />

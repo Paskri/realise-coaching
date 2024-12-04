@@ -18,7 +18,7 @@ export default function Collapse(props) {
         }}
         className={`btn-collapse ${visible ? 'active' : ''}`}
       >
-        <h2>{title}</h2>
+        <span className="question">{title}</span>
         <Image
           src={visible ? dropdownOpen : dropdownClose}
           alt="Dropdown"

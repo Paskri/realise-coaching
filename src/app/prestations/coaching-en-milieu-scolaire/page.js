@@ -61,7 +61,7 @@ export default function CoachingEnMileuScolaire() {
           picture=""
           alt=""
         />
-        <section className="text-section">
+        <div className="text-section">
           <div className="text-container">
             <NegFlag txt="Techniques de recherche de stage" color={color} />
             <p>
@@ -155,7 +155,7 @@ export default function CoachingEnMileuScolaire() {
               <li className='blue-symbol'>Formation de « référents emploi » au sein de l’établissement</li>
             </ul>
           </div>
-        </section>
+        </div>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

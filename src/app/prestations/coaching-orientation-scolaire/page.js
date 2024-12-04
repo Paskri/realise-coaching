@@ -70,7 +70,7 @@ export default function OrientationScolaire() {
           picture="/images/orientation.webp"
           alt="Quelle direction choisir ?"
         />
-        <section className="text-section">
+        <div className="text-section">
           <div className="text-container">
             <NegFlag txt="Recherche de stage & job d’été" color="orange" />
             <div className="text-img-container">
@@ -167,7 +167,7 @@ export default function OrientationScolaire() {
                 <p>Découvrez cette offre en détail sur le site Avenir Factory.</p>
               </div>
               <div className="img-side img-centered">
-                <Link href="https://www.avenirfactory.fr/" target="__blank">
+                <Link href="https://www.avenirfactory.fr/" target="_blank">
 
                   <AosImg
                     style={{ height: 'auto' }}
@@ -211,7 +211,7 @@ export default function OrientationScolaire() {
               </div>
             </div>
           </div>
-        </section>
+        </div>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

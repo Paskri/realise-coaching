@@ -17,7 +17,7 @@ import './pictureandtext.css'
 export default function PictureAndText(props) {
   const { lOrR, picture, alt, txt, color = 'green' } = props
   return (
-    <section
+    <div
       className={`picture-and-text ${color}-fog`}
       style={{
         boxShadow: `0 20px 30px var(--${color}-fog)`,
@@ -42,6 +42,6 @@ export default function PictureAndText(props) {
           dangerouslySetInnerHTML={{ __html: txt }}
         ></div>
       </div>
-    </section>
+    </div>
   )
 }

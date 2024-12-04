@@ -72,7 +72,7 @@ export default function QuiSuisJe() {
           </span>
           <div className="separator"></div>
         </section>
-        <section className="text-section">
+        <div className="text-section">
           <div className="text-container">
             <div>
               <p className="first-p">
@@ -164,7 +164,7 @@ export default function QuiSuisJe() {
               />
             </Link>
           </div>
-        </section>
+        </div>
 
         <script
           type="application/ld+json"

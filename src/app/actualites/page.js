@@ -38,11 +38,11 @@ export default function Actualites() {
         />
       </header>
       <main className='actus'>
-        <section className="text-section">
+        <div className="text-section">
           <div className="text-container">
             <Articles />
           </div>
-        </section>
+        </div>
       </main>
     </>
   )

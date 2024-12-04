@@ -94,7 +94,7 @@ export default function Footer() {
         <span className="copyright">© Realise Coaching 2024, </span>
         <Link href="/mentions-legales">Mentions Légales</Link>, Développé par:
         <span>
-          <Link href="https://krieg.fr" target="__blank">
+          <Link href="https://krieg.fr" target="_blank">
             Pascal Krieg, développeur au K par K
           </Link>
         </span>

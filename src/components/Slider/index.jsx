@@ -24,7 +24,7 @@ export default function Slider() {
   const intervalRef = useRef(null)
   const currentIndexRef = useRef(null)
 
-  const lastTimestampRef = useRef(null) 
+  const lastTimestampRef = useRef(null)
   const animationFrameRef = useRef(null)
 
   // Updating to current index
@@ -214,7 +214,7 @@ export default function Slider() {
 
   return (
     <>
-      <section id="slider" className="slider" ref={sliderRef}>
+      <div id="slider" className="slider" ref={sliderRef}>
         {isLoading ? (
           <div className="loader-container">
             <PulseLoader size={10} color={'#175a48'} speedMultiplier={0.8} />
@@ -317,7 +317,7 @@ export default function Slider() {
             </div>
           </>
         )}
-      </section>
+      </div>
     </>
   )
 }

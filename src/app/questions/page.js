@@ -50,7 +50,7 @@ export default function Questions() {
         />
       </header>
       <main>
-        <section className="about">
+        <div className="about">
           <p className='margin-fix'>Veuillez trouver ci-dessous une selection des questions les plus fréquemment posées autour de la question des coachings que je propose.</p>
           <p className='question-intro'>Si vous ne trouvez pas la réponse que vous cherchez, n’hésitez pas à prendre contact. Je serais ravie de pouvoir vous apporter toutes les réponses dont vous avez besoin.</p>
           <Collapse
@@ -122,7 +122,7 @@ export default function Questions() {
             <p>Pour le Coaching d’Orientation Scolaire, le premier RDV se fait toujours en présence d’au moins 1 parent et du jeune.</p>
             <p>Nous déciderons ensemble d’un plan d’actions adapté et si vous avez été à l’aise et que vous estimez que vous pourrez trouver à mes côtés une solution à votre situation, nous planifierons  première séance.</p>"
           />
-        </section>
+        </div>
 
       </main>
       <script

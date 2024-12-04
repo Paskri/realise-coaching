@@ -213,7 +213,6 @@ export default function Carrousel() {
       >
         <div className="testimonials-btn-container">
           <button
-            href="#"
             className="carrousel-prev"
             aria-controls="testimonial-inner"
             aria-label="Previous testimonial"
@@ -225,7 +224,6 @@ export default function Carrousel() {
             />
           </button>
           <button
-            href="#"
             className="carrousel-next"
             aria-controls="testimonial-inner"
             aria-label="Next testimonial"

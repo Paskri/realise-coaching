@@ -45,7 +45,7 @@ export default function MentionsLegales() {
 
             <NegFlag txt="Développement web et déploiement" color="green" />
             <p>
-              <a href="https://krieg.fr" target="__blank">
+              <a href="https://krieg.fr" target="_blank">
                 Pascal Krieg - Développeur au K par K
               </a>
             </p>

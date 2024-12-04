@@ -65,7 +65,7 @@ export default function CoachingAdulte() {
           color="purple"
           alt="Boussole"
         />
-        <section className="text-section">
+        <div className="text-section">
           <div className="text-container">
             <NegFlag
               txt="Coaching en épanouissement professionnel"
@@ -218,7 +218,7 @@ export default function CoachingAdulte() {
               </div>
             </div>
           </div>
-        </section>
+        </div>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

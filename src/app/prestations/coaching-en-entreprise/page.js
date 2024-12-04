@@ -64,7 +64,7 @@ export default function Entreprise() {
               Avec des séances en visio, ou dans mes locaux, ou enfin, dans l’entreprise même.</p><p>
               Accompagnez avec bienveillance et efficacité vos collaborateurs dans leur retour en entreprise ou leur départ.</p>"
         />
-        <section className="text-section">
+        <div className="text-section">
           <div className="text-container">
             <NegFlag txt="Accompagner un retour de congé maternité ou un congé
                   parental" color="red" />
@@ -119,7 +119,7 @@ export default function Entreprise() {
             <NegFlag txt="Coaching « 3<sup>ème</sup> Vie »" color="red" />
             <p>Enfin, une entreprise a une dernière occasion d’être reconnaissante envers un salarié qui part à la retraite en lui offrant un coaching pour l’aider à préparer cette nouvelle tranche de vie qui est un véritable changement.</p>
           </div>
-        </section>
+        </div>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

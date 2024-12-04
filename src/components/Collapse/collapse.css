@@ -24,7 +24,7 @@
   z-index: 10;
   margin: 0;
 }
-.btn-collapse h2 {
+.btn-collapse .question {
   color: white;
   margin: 0;
 }
@@ -47,8 +47,8 @@
   border: 1px solid var(--primary);
 }
 
-.collapsable-container.small h2,
-.collapsable-container.large h2 {
+.collapsable-container.small .question,
+.collapsable-container.large .question {
   font-size: 0.8rem;
   line-height: 1.15rem;
   font-weight: 500;
@@ -111,11 +111,11 @@
     line-height: 1.6rem;
     margin-bottom: 52px;
   }
-  .collapsable-container.small h2 {
+  .collapsable-container.small .question {
     font-size: 1.125rem;
     line-height: 1.6rem;
   }
-  .collapsable-container.large h2 {
+  .collapsable-container.large .question {
     font-size: 1.125rem;
     line-height: 1.55rem;
   }
