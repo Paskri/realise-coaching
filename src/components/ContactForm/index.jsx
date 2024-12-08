@@ -5,6 +5,7 @@ import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
 import './contactform.css'
 import ButtonOne from '../buttons/ButtonOne'
+import ButtonSubmit from '../buttons/ButtonSubmit'
 
 export default function ContactForm(user, validate) {
   // watch, formState, reset
@@ -38,8 +39,11 @@ export default function ContactForm(user, validate) {
     resolver: yupResolver(schema),
   })
 
-  const onSubmit = async (data) => {
-    const apiMailServerUrl = process.env.API_MAIL_SERVER_URL
+  const onSubmit = async (data, event) => {
+    event.preventDefault()
+    setSuccessMessage('')
+    const apiMailServerUrl = process.env.NEXT_PUBLIC_MAIL_URL
+    console.log(apiMailServerUrl)
     fetch(`${apiMailServerUrl}`, {
       method: 'POST',
       headers: {
@@ -52,7 +56,7 @@ export default function ContactForm(user, validate) {
       .then((datas) => {
         reset()
         setSuccessMessage(
-          'Votre demande à bien été envoyé, vous recevrez une réponse au plus vite.'
+          'Votre demande à bien été envoyé, merci. Je reviendrai vers vous dans les meilleurs délais. Sans réponse de ma part, n’hésitez pas à me contacter par téléphone.'
         )
       })
       .catch((error) => console.log(error))
@@ -61,7 +65,7 @@ export default function ContactForm(user, validate) {
     <section id="contact" className="section contact">
       <form onSubmit={handleSubmit(onSubmit)} className="contact-form">
         <h2 className="contact-title">Contactez-moi</h2>
-
+        {errors && console.log(errors)}
         {successMessage ? <p className="success">{successMessage}</p> : ''}
         <label htmlFor="name">
           Nom :
@@ -86,7 +90,7 @@ export default function ContactForm(user, validate) {
             {...register('email')}
           />
         </label>
-        {errors.name && <p className="c-yup">{errors.name.message}</p>}
+        {errors.email && <p className="c-yup">{errors.email.message}</p>}
         <label htmlFor="subject">
           Sujet :
           <input
@@ -98,7 +102,7 @@ export default function ContactForm(user, validate) {
             {...register('subject')}
           />
         </label>
-        {errors.email && <p className="c-yup">{errors.email.message}</p>}
+        {errors.subject && <p className="c-yup">{errors.subject.message}</p>}
         <label htmlFor="message">
           Message :
           <textarea
@@ -109,7 +113,7 @@ export default function ContactForm(user, validate) {
           />
         </label>
         {errors.message && <p className="c-yup">{errors.message.message}</p>}
-        <ButtonOne type="submit" txt="envoyer" />
+        <ButtonSubmit type="submit" txt="envoyer" />
       </form>
     </section>
   )
