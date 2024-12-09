@@ -23,6 +23,14 @@ export const metadata = {
     'Reconversion professionnelle',
     'Accompagnement personnalisé',
   ],
+  metadataBase: new URL('https://realise-coaching.fr'),
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Coaching Scolaire & Professionnel - Realise Coaching',
+    description:
+      'Accompagnement pour réussir dans vos projets scolaires et professionnels à Strasbourg.',
+    images: '/images/og/realise-logo-og.webp',
+  },
   openGraph: {
     title: 'Coaching d’Orientation Scolaire & Professionnel - Realise Coaching',
     description:
@@ -30,7 +38,7 @@ export const metadata = {
     url: 'https://www.realise-coaching.fr/',
     images: [
       {
-        url: 'https://www.realise-coaching.fr/images/og/realise-logo-og.webp',
+        url: '/images/og/realise-logo-og.webp',
         width: 1200,
         height: 630,
         alt: 'Logo de Realise Coaching et slogan "Un avenir scolaire en main"',
@@ -38,13 +46,7 @@ export const metadata = {
     ],
     type: 'website',
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Coaching Scolaire & Professionnel - Realise Coaching',
-    description:
-      'Accompagnement pour réussir dans vos projets scolaires et professionnels à Strasbourg.',
-    images: ['https://www.realise-coaching.fr/images/Lucie_logo_sapin_FINAL.png'],
-  },
+
 };
 
 export default function Home() {

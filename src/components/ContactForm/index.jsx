@@ -43,7 +43,6 @@ export default function ContactForm(user, validate) {
     event.preventDefault()
     setSuccessMessage('')
     const apiMailServerUrl = process.env.NEXT_PUBLIC_MAIL_URL
-    console.log(apiMailServerUrl)
     fetch(`${apiMailServerUrl}`, {
       method: 'POST',
       headers: {

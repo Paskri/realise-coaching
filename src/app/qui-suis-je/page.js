@@ -23,6 +23,14 @@ export const metadata = {
     'coaching Parcoursup',
     'recrutement cadres dirigeants',
   ],
+  metadataBase: new URL('https://realise-coaching.fr'),
+  twitter: {
+    card: 'summary',
+    title: 'Qui suis-je ? | Realise Coaching',
+    description: "Rencontrez Lucie Calvayrac, une coach professionnelle certifiée RNCP spécialisée en orientation scolaire et professionnelle. Avec plus de 20 ans d'expérience, elle met ses compétences au service de votre épanouissement.",
+    creator: '@luciecalvayrac',
+    images: '/images/og/natal-landscape.webp',
+  },
   openGraph: {
     title: 'Qui suis-je ? | Realise Coaching',
     description:
@@ -36,7 +44,7 @@ export const metadata = {
     },
     images: [
       {
-        url: 'https://www.realise-coaching.fr/images/og/natal-landscape.webp',
+        url: '/images/og/natal-landscape.webp',
         width: 1200,
         height: 630,
         alt: 'Portrait de Lucie Calvayrac',

@@ -21,6 +21,14 @@ export const metadata = {
     "techniques de recherche d'emploi",
     "accompagnement scolaire",
   ],
+  metadataBase: new URL('https://realise-coaching.fr'),
+  twitter: {
+    card: 'summary',
+    title: 'Coaching en Milieu Scolaire | Realise Coaching',
+    description: 'Des interventions et ateliers sur mesure pour accompagner vos élèves dans leur orientation et leur réussite professionnelle.',
+    creator: '@luciecalvayrac',
+    images: '/images/og/young-people-og.webp',
+  },
   openGraph: {
     title: "Coaching en Milieu Scolaire | Realise Coaching",
     description: "Des interventions et ateliers sur mesure pour accompagner vos élèves dans leur orientation et leur réussite professionnelle.",
@@ -28,7 +36,7 @@ export const metadata = {
     type: "article",
     images: [
       {
-        url: "https://www.realise-coaching.fr/images/og/young-people-og.webp",
+        url: "/images/og/young-people-og.webp",
         width: 1200,
         height: 630,
         alt: "Coaching en milieu scolaire - Realise Coaching",

@@ -23,6 +23,14 @@ export const metadata = {
     "nouveau défi professionnel",
     "coaching emploi",
   ],
+  metadataBase: new URL('https://realise-coaching.fr'),
+  twitter: {
+    card: 'summary',
+    title: 'Coaching Adulte | Realise Coaching',
+    description: 'Donnez un nouveau souffle à votre vie professionnelle avec un coaching personnalisé : bilan de carrière, optimisation des candidatures, et préparation aux entretiens.',
+    creator: '@luciecalvayrac',
+    images: '/images/og/barque-og.webp',
+  },
   openGraph: {
     title: "Coaching Adulte | Realise Coaching",
     description: "Donnez un nouveau souffle à votre vie professionnelle avec un coaching personnalisé : bilan de carrière, optimisation des candidatures, et préparation aux entretiens.",
@@ -30,7 +38,7 @@ export const metadata = {
     type: "article",
     images: [
       {
-        url: "https://www.realise-coaching.fr/images/og/barque-og.webp",
+        url: "/images/og/barque-og.webp",
         width: 1200,
         height: 630,
         alt: "Coaching adulte - Realise Coaching",

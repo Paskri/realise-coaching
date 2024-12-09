@@ -36,6 +36,14 @@ export const metadata = {
     'informations pratiques',
     'coaching Illkirch-Graffenstaden',
   ],
+  metadataBase: new URL('https://realise-coaching.fr'),
+  twitter: {
+    card: 'summary',
+    title: 'Contact | Realise Coaching',
+    description: 'Contactez Realise Coaching pour discuter de votre projet. Retrouvez également toutes les informations pratiques : adresse, parking, accès tram et bus, et prenez rendez-vous directement en ligne avec Lucie Calvayrac.',
+    creator: '@luciecalvayrac',
+    images: '/images/og/room-og.webp',
+  },
   openGraph: {
     title: 'Contact | Realise Coaching',
     description:
@@ -44,7 +52,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.realise-coaching.fr/images/og/room-og.webp',
+        url: '/images/og/room-og.webp',
         width: 1200,
         height: 630,
         alt: 'Bureaux de Realise Coaching',

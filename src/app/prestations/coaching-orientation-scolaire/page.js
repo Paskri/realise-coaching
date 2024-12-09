@@ -24,6 +24,14 @@ export const metadata = {
     'Avenir Factory',
     'coaching sur mesure',
   ],
+  metadataBase: new URL('https://realise-coaching.fr'),
+  twitter: {
+    card: 'summary',
+    title: 'Coaching Orientation Scolaire | Realise Coaching',
+    description: 'Découvrez une approche unique pour guider les 14-25 ans dans leurs choix professionnels : stages, Parcoursup, orientation et découverte de métiers grâce au coaching sur mesure.',
+    creator: '@luciecalvayrac',
+    images: '/images/og/children-og.webp',
+  },
   openGraph: {
     title: 'Coaching Orientation Scolaire | Realise Coaching',
     description:
@@ -32,7 +40,7 @@ export const metadata = {
     type: 'article',
     images: [
       {
-        url: 'https://www.realise-coaching.fr/images/og/children-og.webp',
+        url: '/images/og/children-og.webp',
         width: 1200,
         height: 630,
         alt: "Coaching d'orientation scolaire - Realise Coaching",

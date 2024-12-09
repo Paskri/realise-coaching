@@ -20,17 +20,25 @@ export const metadata = {
     "coaching adolescent",
     "coaching développement personnel"
   ],
+  metadataBase: new URL('https://realise-coaching.fr'),
+  twitter: {
+    card: 'summary',
+    title: 'Questions fréquentes | Realise Coaching',
+    description: "Découvrez les réponses aux questions les plus fréquentes concernant les coachings individuels, professionnels, scolaires et plus. Si vous avez d'autres questions, contactez-nous.",
+    creator: '@luciecalvayrac',
+    images: '/images/og/barque-og.webp',
+  },
   openGraph: {
-    title: "Questions fréquentes - REALISE Coaching",
+    title: "Questions fréquentes | REALISE Coaching",
     description: "Découvrez les réponses aux questions les plus fréquentes concernant les coachings individuels, professionnels, scolaires et plus. Si vous avez d'autres questions, contactez-nous.",
     url: "https://www.realise-coaching.fr/questions",
     type: "website",
     images: [
       {
-        url: "https://www.realise-coaching.fr/images/og/children-og.webp",
+        url: "/images/og/children-og.webp",
         width: 1200,
         height: 630,
-        alt: "FAQ sur le coaching avec REALISE Coaching"
+        alt: "FAQ | REALISE Coaching"
       },
     ],
   },

@@ -23,6 +23,14 @@ export const metadata = {
     "transition professionnelle",
     "bien-être collaborateur",
   ],
+  metadataBase: new URL('https://realise-coaching.fr'),
+  twitter: {
+    card: 'summary',
+    title: 'Coaching en Entreprise | Realise Coaching',
+    description: 'Facilitez les transitions professionnelles de vos collaborateurs : retours de congés, expatriations et départs. Un coaching sur mesure pour votre entreprise.',
+    creator: '@luciecalvayrac',
+    images: '/images/og/bridge-og.webp',
+  },
   openGraph: {
     title: "Coaching en Entreprise | Realise Coaching",
     description: "Facilitez les transitions professionnelles de vos collaborateurs : retours de congés, expatriations et départs. Un coaching sur mesure pour votre entreprise.",
@@ -30,7 +38,7 @@ export const metadata = {
     type: "article",
     images: [
       {
-        url: "https://www.realise-coaching.fr/images/og/bridge-og.webp",
+        url: "/images/og/bridge-og.webp",
         width: 1200,
         height: 630,
         alt: "Coaching en entreprise - Realise Coaching",
