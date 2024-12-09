@@ -11,7 +11,7 @@
   },
   {
     "title": "Coaching Adultes",
-    "text": "<p>Découvrez ce qui vous tient vraiment à cœur et donnez-vous les moyens de décrocher le job de vos rêves !</p>\n<ul>\n  <li class=\"services-li purple-symbol\">Coaching en épanouissement professionnel</li>\n  <li class=\"services-li purple-symbol\">Conseils dans votre recherche d'emploi</li>\n  <li class=\"services-li purple-symbol\">Coaching de retour à l'emploi</li>\n  <li class=\"services-li purple-symbol\">Préparer un entretien d'embauche ?</li>\n  <li class=\"services-li purple-symbol\">Coaching « 3<sup>ème</sup> Vie ».</li>\n</ul>",
+    "text": "<p>Découvrez ce qui vous tient vraiment à cœur et donnez-vous les moyens de décrocher le job de vos rêves !</p>\n<ul>\n  <li class=\"services-li purple-symbol\">Coaching en épanouissement professionnel</li>\n  <li class=\"services-li purple-symbol\">Conseils dans votre recherche d'emploi</li>\n  <li class=\"services-li purple-symbol\">Coaching de retour à l'emploi</li>\n  <li class=\"services-li purple-symbol\">Préparer un entretien d'embauche</li>\n  <li class=\"services-li purple-symbol\">Coaching « 3<sup>ème</sup> Vie ».</li>\n</ul>",
     "color": "purple",
     "link": "/prestations/coaching-adulte"
   },

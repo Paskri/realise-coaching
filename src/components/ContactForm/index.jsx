@@ -56,7 +56,7 @@ export default function ContactForm(user, validate) {
       .then((datas) => {
         reset()
         setSuccessMessage(
-          'Votre demande à bien été envoyé, merci. Je reviendrai vers vous dans les meilleurs délais. Sans réponse de ma part, n’hésitez pas à me contacter par téléphone.'
+          'Votre demande à bien été envoyée, merci. Je reviendrai vers vous dans les meilleurs délais. Sans réponse de ma part, n’hésitez pas à me contacter par téléphone.'
         )
       })
       .catch((error) => console.log(error))
