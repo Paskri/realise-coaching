@@ -10,7 +10,7 @@ import Expertise from '@/components/Expertise'
 import Partners from '@/components/Partners'
 
 export const metadata = {
-  title: 'Coaching Scolaire & Professionnel à Strasbourg - Realise Coaching',
+  title: 'Realise Coaching - Coaching d’Orientation Scolaire & Professionnel à Strasbourg',
   description:
     'Accompagnement personnalisé pour réussir votre orientation scolaire, booster votre carrière ou améliorer votre épanouissement au travail. Coaching à Strasbourg et environs pour tous les âges.',
   keywords: [
@@ -26,13 +26,13 @@ export const metadata = {
   metadataBase: new URL('https://realise-coaching.fr'),
   twitter: {
     card: 'summary_large_image',
-    title: 'Coaching Scolaire & Professionnel - Realise Coaching',
+    title: 'Realise Coaching',
     description:
-      'Accompagnement pour réussir dans vos projets scolaires et professionnels à Strasbourg.',
+      'Accompagnement pour votre réussite scolaires et professionnelle à Strasbourg.',
     images: '/images/og/realise-logo-og.webp',
   },
   openGraph: {
-    title: 'Coaching d’Orientation Scolaire & Professionnel - Realise Coaching',
+    title: 'Realise Coaching',
     description:
       'Coaching d’orientation scolaire et professionnel à Strasbourg. RÉALISE Coaching vous accompagne dans votre réussite personnelle et professionnelle.',
     url: 'https://www.realise-coaching.fr/',
