@@ -126,7 +126,7 @@ export default function QuiSuisJe() {
               </p>
               <p>
                 Depuis plus de 7 ans, j’accompagne des collégiens dans leur
-                recherche de stage de 3<sup>ème</sup>.{' '}
+                recherche de stage de 3<sup>ème</sup>.
               </p>
               <p>
                 En lycée, j’ai apporté mon aide à la direction pour la création

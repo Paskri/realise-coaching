@@ -229,10 +229,7 @@ export default function Slider() {
                 aria-label="Previous slide"
                 onClick={(e) => setNextIndex(currentIndex - 1)}
               >
-                <FontAwesomeIcon
-                  icon={faChevronLeft}
-                  style={{ fontSize: '2.5rem', width: '25px', height: '40px' }}
-                />
+                <FontAwesomeIcon icon={faChevronLeft} />
               </a>
               ,
               <a
