@@ -18,6 +18,7 @@ import {
   faTrainTram,
   faBusSimple,
 } from '@fortawesome/free-solid-svg-icons'
+import ContactInfosDouble from '@/components/ContactInfosDouble'
 
 export const metadata = {
   title: 'Contact | Realise Coaching',
@@ -60,6 +61,17 @@ export const metadata = {
     ],
   },
 }
+
+const doubleContact = [
+  {
+    txt: "<span class='address infos-title'>Espace coworking La Poule Qui Mue</span><span class='address'>24 Rue des Érables, 67210 OBERNAI</span><span class='address'>Accessibilité PMR</span>",
+    link: "https://lapoulequimue.alsace"
+  },
+  {
+    txt: "<span class='address infos-title'>Pôle de santé et de Bien-être</span><span class='address'>158 B, Route de Lyon - 67118 ILLKIRCH</span><span class='address'>2<sup>ème</sup> étage avec ascenseur.</span>",
+    link: "https://www.google.com/maps?q=158B+route+de+Lyon,+67400+Illkirch-Graffenstaden"
+  }
+]
 
 export default function Contact() {
   return (
@@ -136,17 +148,17 @@ export default function Contact() {
           <Flag txt="Informations pratiques" color="green" />
           <div className="contact-container two">
             <div className="right-container infos">
-              <ContactInfos
-                txt="<span class='address'>Espace coworking La Poule Qui Mue</span><span class='address'>24 Rue des Érables, 67210 OBERNAI</span><span class='address'>Accessibilité PMR</span>"
+
+              <ContactInfosDouble
+                datas={doubleContact}
                 icon={faLocation}
-                link="https://lapoulequimue.alsace"
               />
-              {/* nesting a in a not allowed. Suppressed link : <a href='https://psbeillkirch.wixsite.com/psbe' target='_blank'></a> */}
+              {/* nesting a in a not allowed. Suppressed link : <a href='https://psbeillkirch.wixsite.com/psbe' target='_blank'></a> 
               <ContactInfos
-                txt="<span class='address'>Pôle de santé et de Bien-être</span><span class='address'>158 B, Route de Lyon - 67118 ILLKIRCH</span><span class='address'>2<sup>ème</sup> étage avec ascenseur.</span>"
+                txt="<span class='address infos-title'>Pôle de santé et de Bien-être</span><span class='address'>158 B, Route de Lyon - 67118 ILLKIRCH</span><span class='address'>2<sup>ème</sup> étage avec ascenseur.</span>"
                 icon={faLocation}
                 link="https://www.google.com/maps?q=158B+route+de+Lyon,+67400+Illkirch-Graffenstaden"
-              />
+              />*/}
               <ContactInfos
                 txt="<span class='address'>Possibilité de se garer à proximité.</span><span class='address'>Parking gratuit de la Vill’A, accès au 170 Route de Lyon.</span>"
                 icon={faCarSide}

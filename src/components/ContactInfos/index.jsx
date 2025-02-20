@@ -14,18 +14,16 @@ export default function ContactInfos(props) {
           target={link ? '_blank' : ''}
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon
-            className="green"
-            icon={icon}
-            style={{
-              fontSize: '25px',
-              width: '25px',
-              height: '25px',
-              color: 'white',
-              padding: '30px',
-            }}
-            size="lg"
-          />
+          <div className="infos-svg-container green">
+            <FontAwesomeIcon
+              className=""
+              icon={icon}
+              style={{
+                color: 'white',
+              }}
+              size="lg"
+            />
+          </div>
           <div
             className="right-div"
             dangerouslySetInnerHTML={{ __html: txt }}
