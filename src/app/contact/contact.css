@@ -56,8 +56,8 @@ main {
   border: 1px solid var(--primary);
   border-radius: 10px;
   overflow: hidden;
-  margin-bottom: 14px;
-  min-height: 92px;
+  margin-bottom: 10px;
+  min-height: 80px;
 }
 .address-double-link {
   display: flex;
@@ -82,7 +82,6 @@ main {
   justify-content: center;
   align-items: flex-start;
   flex-grow: 1;
-  height: 100%;
   padding: 5px 0 5px 15px;
   padding-left: 15px;
   font-size: 0.8rem;
@@ -239,6 +238,10 @@ main {
   .upper {
     padding: 0 0 20px 0;
     text-align: left;
+  }
+  .address-link {
+    min-height: 92px;
+    margin-bottom: 14px;
   }
   .right-div,
   .right-double-div {

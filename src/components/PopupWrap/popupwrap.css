@@ -28,3 +28,8 @@
   max-height: unset;
   height: 100%;
 }
+
+#modal-root .calendly-overlay .calendly-popup {
+  height: 100%;
+  max-height: unset;
+}

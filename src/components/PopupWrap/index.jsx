@@ -38,7 +38,7 @@ export default function PopupWrap() {
       </button>
       {typeof window !== 'undefined' && (
         <PopupModal
-          url="https://calendly.com/l-calvayrac/prise-de-contact"
+          url="https://calendly.com/l-calvayrac"
           pageSettings={{
             backgroundColor: 'ffffff',
             hideEventTypeDetails: false,
