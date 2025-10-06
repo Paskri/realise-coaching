@@ -67,7 +67,7 @@ export default function Home() {
           lOrR="left"
           picture="/images/boussole.webp"
           alt="Boussole"
-          txt="<p>De 14 à 70 ans , RÉALISEz vous dans l’activité  qui vous épanouit !</p>"
+          txt="<p>De 14 à 70 ans, RÉALISEz vous dans l’activité  qui vous épanouit !</p>"
         />
         <Expertise />
 

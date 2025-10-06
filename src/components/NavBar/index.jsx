@@ -45,7 +45,7 @@ const customStyle = {
 export default function NavBar(props) {
   const { color = 'green' } = props
   const [isOpen, setIsOpen] = useState(false)
-  const [dropdownOpen, setDropdownOpen] = useState(false)
+  const [dropdownOpen, setDropdownOpen] = useState(null)
 
   const toggleModal = useCallback(
     (e) => {
@@ -108,10 +108,18 @@ export default function NavBar(props) {
                 <li
                   key={link.link}
                   className={`navbar-li ${isActive(link.link) ? 'active' : ''}`}
-                  onMouseEnter={() => setDropdownOpen(index)}
-                  onMouseLeave={() => setDropdownOpen(null)}
+                  onMouseEnter={
+                    link.submenu ? () => setDropdownOpen(index) : undefined
+                  }
+                  onMouseLeave={
+                    link.submenu ? () => setDropdownOpen(null) : undefined
+                  }
                   onClick={() =>
-                    setDropdownOpen((prev) => (prev === index ? null : index))
+                    setDropdownOpen(
+                      link.submenu
+                        ? (prev) => (prev === index ? null : index)
+                        : undefined
+                    )
                   }
                 >
                   {link.link && !link.submenu ? (

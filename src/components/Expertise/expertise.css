@@ -63,9 +63,14 @@
 @media screen and (min-width: 900px) {
   .expert-container {
     flex-direction: row;
+    flex-wrap: wrap;
   }
   .expert-bloc {
-    margin: 0;
+    margin: 15px 10px;
     width: 30%;
+    min-width: 310px;
   }
+}
+
+@media screen and (min-width: 1020px) {
 }

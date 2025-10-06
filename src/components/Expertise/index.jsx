@@ -48,8 +48,8 @@ export default function Expertise() {
             />
           </div>
           <div className="expert-right">
-            <span>Coach certifée</span>
-            <span className="duration">RNCP</span>
+            <span>Coach professionnelle</span>
+            <span className="duration">Certifiée RNCP</span>
           </div>
         </div>
         <div className="expert-bloc bordered">
@@ -67,8 +67,8 @@ export default function Expertise() {
             />
           </div>
           <div className="expert-right">
-            <span>Orientation des jeunes</span>
-            <span className="duration">depuis 7 ans</span>{' '}
+            <span>Accompagnement des jeunes</span>
+            <span className="duration">depuis 2017</span>{' '}
           </div>
         </div>
       </div>
